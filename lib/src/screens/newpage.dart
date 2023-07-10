@@ -29,7 +29,10 @@ class _NewPageState extends State<NewPage> {
                   onPressed: () {
                     GoRouter.of(context).go('/home');
                   },
-                  child: Text('New Page'))
+                  child: Text(
+                    'New Page',
+                    style: Theme.of(context).textTheme.displayMedium,
+                  ))
             ],
           ),
         ),
