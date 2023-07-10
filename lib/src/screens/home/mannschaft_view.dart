@@ -7,7 +7,10 @@ class Mannschaften extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.center,
-      child: const Text('Mannschaften'),
+      child: Text(
+        'Mannschaften',
+        style: Theme.of(context).textTheme.displayMedium,
+      ),
     );
   }
 }
