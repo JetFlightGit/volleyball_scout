@@ -1,15 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:volleyball_scout/src/utils/theme/colors/color_schemes.g.dart';
+import 'package:volleyball_scout/src/utils/theme/colors/custom_color.g.dart';
+import 'package:volleyball_scout/src/utils/theme/widget_themes/textTheme.dart';
 
-const darkTheme = TextTheme(
-  displayMedium: TextStyle(
-    fontFamily: 'Montserrat',
-    color: Colors.amber,
-  ),
-);
+ThemeData getLightTheme() {
+  ColorScheme lightScheme = lightColorScheme;
 
-const lightTheme = TextTheme(
-  displayMedium: TextStyle(
-    fontFamily: 'Montserrat',
-    color: Colors.amber,
-  ),
-);
+  return ThemeData(
+    useMaterial3: true,
+    colorScheme: lightScheme,
+    textTheme: lightTextTheme,
+    extensions: [lightCustomColors],
+  );
+}
+
+ThemeData getDarkTheme() {
+  ColorScheme darkScheme = darkColorScheme;
+
+  return ThemeData(
+    useMaterial3: true,
+    colorScheme: darkScheme,
+    textTheme: darkTextTheme,
+    extensions: [darkCustomColors],
+  );
+}
