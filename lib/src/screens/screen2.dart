@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:volleyball_scout/src/common_widgets/helloWorldWidget.dart';
+import 'package:volleyball_scout/src/common_widgets/helloWorld_%20widget.dart';
 
 class Screen2 extends StatelessWidget {
-  const Screen2({super.key});
+  const Screen2({Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class Screen2 extends StatelessWidget {
           ElevatedButton(
             onPressed: () {
               // Navigate to Screen2
-              GoRouter.of(context).go('counter');
+              GoRouter.of(context).go('/');
             },
             child: Text('Go to Home'),
           )

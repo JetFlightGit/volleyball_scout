@@ -5,8 +5,6 @@ import 'package:volleyball_scout/src/utils/theme/theme.dart';
 import 'src/routes/go_router_provider.dart';
 
 void main() {
-  // WidgetsFlutterBinding.ensureInitialized();
-  // Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(
     ProviderScope(
       child: MyApp(),

@@ -1,17 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-// import 'package:flutter_riverpod/flutter_riverpod.dart';
-// import 'package:my_app_name/src/features/players/data/player.dart';
-// import 'package:my_app_name/src/services/firebase_service.dart';
 
-class NewPage extends StatefulWidget {
-  const NewPage({super.key});
+class Screen3 extends StatefulWidget {
+  const Screen3({Key? key});
 
   @override
-  State<NewPage> createState() => _NewPageState();
+  State<Screen3> createState() => _Screen3State();
 }
 
-class _NewPageState extends State<NewPage> {
+class _Screen3State extends State<Screen3> {
   @override
   Widget build(BuildContext context) {
     return Container(
