@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:volleyball_scout/src/constants/named_route.dart';
 
 class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
   @override
@@ -12,9 +13,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
         icon: const Icon(Icons.add_alert),
         tooltip: 'Show Snackbar',
         onPressed: () {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('This is a snackbar')),
-          );
+          context.goNamed(home);
         },
       ),
       title: const Text("Volleyball Scout"),
@@ -23,7 +22,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
         ElevatedButton(
           onPressed: () {
             // Navigate to Screen 1
-            GoRouter.of(context).go('/screen1');
+            context.go('/screen1');
           },
           child: Text('1'),
         ),
@@ -31,7 +30,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
         ElevatedButton(
           onPressed: () {
             // Navigate to Screen 2
-            GoRouter.of(context).go('/screen2');
+            context.go('/screen2');
           },
           child: Text('2'),
         ),
@@ -39,7 +38,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
         ElevatedButton(
           onPressed: () {
             // Navigate to Screen 3
-            GoRouter.of(context).go('/screen3');
+            context.go('/screen3');
           },
           child: Text('3'),
         ),
@@ -47,10 +46,11 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
         OutlinedButton(
           onPressed: () {
             // Navigate to Home
-            GoRouter.of(context).go('/');
+            context.go('/profile');
           },
           child: const Text('Login'),
         ),
+        const SizedBox(width: 10),
       ],
     );
   }

@@ -55,7 +55,7 @@ const darkColorScheme = ColorScheme(
   background: Color(0xFF2E3235), //BG
   onBackground: Color(0xFFE2E2E5),
   surface: Color(0xFF383C40), // AppBar BG
-  onSurface: Color(0xFFE2E2E5),
+  onSurface: Color(0xFFE2E2E5), // Text on General Surface
   surfaceVariant: Color(0xFF42474E),
   onSurfaceVariant: Color(0xFFC2C7CE),
   outline: Color(0xFF8C9198),

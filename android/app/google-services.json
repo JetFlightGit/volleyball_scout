@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "376096659537",
-    "project_id": "volleyball-scout-a1da5",
-    "storage_bucket": "volleyball-scout-a1da5.appspot.com"
+    "project_number": "619800615635",
+    "project_id": "volleyball-scout-cb959",
+    "storage_bucket": "volleyball-scout-cb959.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:376096659537:android:4eebcfd304f2d981054070",
+        "mobilesdk_app_id": "1:619800615635:android:3f5953204d854d6e981226",
         "android_client_info": {
           "package_name": "com.example.flutter_chatgpt"
         }
       },
       "oauth_client": [
         {
-          "client_id": "376096659537-g1g1ddb7h7kdi0fjlq94vak0ivu4hkp7.apps.googleusercontent.com",
+          "client_id": "619800615635-t0holorcnvuies3qe62kjmskre22j9qk.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD4Lf3yHqnDs5Uvc20AscDH7ARyQqS4ugA"
+          "current_key": "AIzaSyBjBRiN-j_Wr0hUt16EDev4MxrjTMOnQaQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "376096659537-g1g1ddb7h7kdi0fjlq94vak0ivu4hkp7.apps.googleusercontent.com",
+              "client_id": "619800615635-t0holorcnvuies3qe62kjmskre22j9qk.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

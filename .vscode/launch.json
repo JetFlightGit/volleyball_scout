@@ -5,18 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "flutter_chatgpt",
+            "name": "Volleyball Scout",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "flutter_chatgpt (profile mode)",
+            "name": "Volleyball Scout (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"
         },
         {
-            "name": "flutter_chatgpt (release mode)",
+            "name": "Volleyball Scout (release mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"

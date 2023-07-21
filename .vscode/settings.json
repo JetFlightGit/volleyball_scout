@@ -1,10 +1,14 @@
 {
     "cSpell.words": [
         "Firestore",
+        "lerp",
         "mannschaft",
         "Mannschaften",
+        "profil",
         "Riverpod",
-        "spiele"
+        "signin",
+        "spiele",
+        "welcomescreen"
     ],
     "blockman.n03MaxDepth": 10,
     "blockman.n33A04B1FromFocusToOutwardForFocusTreeBorders": "!",
