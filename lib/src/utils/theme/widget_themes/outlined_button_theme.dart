@@ -10,6 +10,9 @@ final lightOutlinedButtonTheme = OutlinedButtonThemeData(
 // Dark Theme
 final darkOutlinedButtonTheme = OutlinedButtonThemeData(
   style: OutlinedButton.styleFrom(
-    shape: RoundedRectangleBorder(),
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(
+          40.0), // Adjust the value as per your preference
+    ),
   ),
 );

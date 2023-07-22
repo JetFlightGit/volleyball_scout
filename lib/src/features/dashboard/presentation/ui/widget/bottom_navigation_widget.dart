@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
+import 'package:volleyball_scout/src/features/dashboard/presentation/controller/bottom_navigation_bar.dart';
 import 'package:volleyball_scout/src/features/dashboard/presentation/controller/dashboard_controller.dart';
 
 class BottomNavigationWidget extends ConsumerStatefulWidget {
@@ -34,6 +34,7 @@ class _BottomNavigationWidgetState
             alignment: Alignment.bottomCenter,
             children: [
               BottomNavigationBar(
+                elevation: 100,
                 backgroundColor: Theme.of(context).colorScheme.surface,
                 selectedItemColor: Colors.amber,
                 selectedFontSize: 14,
@@ -82,27 +83,12 @@ class _BottomNavigationWidgetState
     } else if (details.primaryVelocity! < 0 && position < 2) {
       ref.read(dashboardControllerProvider.notifier).setPosition(position + 1);
     }
-
+    onTap(context, ref);
     return;
   }
 
   void _onTap(int index) {
     ref.read(dashboardControllerProvider.notifier).setPosition(index);
-
-    switch (index) {
-      case 0:
-        context.go('/games');
-        break;
-
-      case 1:
-        context.go('/');
-        break;
-
-      case 2:
-        context.go('/teams');
-        break;
-
-      default:
-    }
+    onTap(context, ref);
   }
 }

@@ -10,3 +10,4 @@ const String screen3 = 'screen3';
 const String welcomescreen = 'welcomescreen';
 const String signin = 'signin';
 const String profile = 'profile';
+const String sidebar = 'sidebar';

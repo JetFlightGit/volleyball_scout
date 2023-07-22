@@ -10,19 +10,16 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       leading: IconButton(
-        icon: const Icon(Icons.add_alert),
-        tooltip: 'Show Snackbar',
-        onPressed: () {
-          context.goNamed(home);
-        },
-      ),
-      title: const Text("Volleyball Scout"),
+          onPressed: () {
+            context.pushNamed(sidebar);
+          },
+          icon: Icon(Icons.menu)),
       actions: <Widget>[
         const SizedBox(width: 10),
         ElevatedButton(
           onPressed: () {
             // Navigate to Screen 1
-            context.go('/screen1');
+            context.goNamed(screen1);
           },
           child: Text('1'),
         ),
@@ -30,7 +27,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
         ElevatedButton(
           onPressed: () {
             // Navigate to Screen 2
-            context.go('/screen2');
+            context.goNamed(screen2);
           },
           child: Text('2'),
         ),
@@ -38,15 +35,15 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
         ElevatedButton(
           onPressed: () {
             // Navigate to Screen 3
-            context.go('/screen3');
+            context.goNamed(screen3);
           },
           child: Text('3'),
         ),
         const SizedBox(width: 10),
         OutlinedButton(
           onPressed: () {
-            // Navigate to Home
-            context.go('/profile');
+            // Navigate to Profil
+            context.goNamed(profile);
           },
           child: const Text('Login'),
         ),

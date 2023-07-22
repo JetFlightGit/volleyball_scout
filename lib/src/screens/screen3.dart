@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:volleyball_scout/src/constants/named_route.dart';
+import 'package:volleyball_scout/src/features/dashboard/presentation/controller/bottom_navigation_bar.dart';
 
-class Screen3 extends StatefulWidget {
+class Screen3 extends ConsumerWidget {
   const Screen3({Key? key});
 
   @override
-  State<Screen3> createState() => _Screen3State();
-}
-
-class _Screen3State extends State<Screen3> {
-  @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return Container(
       child: MaterialApp(
         title: 'Firestore Demo',
@@ -18,13 +16,20 @@ class _Screen3State extends State<Screen3> {
           primarySwatch: Colors.blue,
         ),
         home: Scaffold(
-          appBar: AppBar(),
+          appBar: AppBar(
+            leading: IconButton(
+              icon: Icon(Icons.arrow_back),
+              onPressed: () {
+                onTap(context, ref);
+              },
+            ),
+          ),
           body: Column(
             children: [
               Text('Test'),
               ElevatedButton(
                   onPressed: () {
-                    GoRouter.of(context).go('/home');
+                    GoRouter.of(context).goNamed(home);
                   },
                   child: Text(
                     'New Page',

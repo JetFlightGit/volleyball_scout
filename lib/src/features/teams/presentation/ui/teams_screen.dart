@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:volleyball_scout/src/common_widgets/appBar_widget.dart';
 
 class TeamsScreen extends StatefulWidget {
   const TeamsScreen({super.key});
@@ -11,9 +12,7 @@ class _TeamsState extends State<TeamsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('TeamsScreen'),
-      ),
+      appBar: AppBarWidget(),
       body: Center(
         child: Column(
           children: const [Text('TeamsScreen')],
